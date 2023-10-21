@@ -91,4 +91,10 @@ if __name__ == "__main__":
     profiles = ls.parse_people()
     print(profiles)
     # save each link and profile into the CSV file
+    with open('linkedin_' + args.keyword + '_' + str(args.limit) + '.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Linkedin URL profile link"])
+        for link in links:
+            writer.writerow([link])
+    file.close()
     # create a CSV and then write in URl of link using for link in links

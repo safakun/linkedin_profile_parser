@@ -2,7 +2,7 @@
 need to avoid google search API limitations 
 
 ```bash
-python scraper.py --keyword "microsoft" --limit 15
+python scraper.py --keyword "ibm" --limit 15
 ```
 
 Todo: 
