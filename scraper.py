@@ -3,6 +3,7 @@ import argparse
 import requests
 import re
 from time import sleep
+import csv
 
 parser = argparse.ArgumentParser(description='Searches Google For Linkedin Profiles')
 parser.add_argument('--keyword', type=str, help='keywords to search')
